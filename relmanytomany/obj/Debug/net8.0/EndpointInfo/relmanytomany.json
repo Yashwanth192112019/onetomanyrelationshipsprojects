@@ -1,0 +1,643 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "relmanytomany",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/both": {
+      "get": {
+        "tags": [
+          "both"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/both"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/both"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/both"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cantfly": {
+      "get": {
+        "tags": [
+          "cantfly"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cantfly"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cantfly"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cantfly"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "cantfly"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "cantfly"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cantfly"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "cantfly"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cantfly/{id}": {
+      "get": {
+        "tags": [
+          "cantfly"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cantfly"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fly": {
+      "get": {
+        "tags": [
+          "fly"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/fly"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/fly"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/fly"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "fly"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "fly"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/fly"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "fly"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fly/{id}": {
+      "get": {
+        "tags": [
+          "fly"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fly"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "both": {
+        "type": "object",
+        "properties": {
+          "bid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fly": {
+            "$ref": "#/components/schemas/fly"
+          },
+          "cId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantfly": {
+            "$ref": "#/components/schemas/cantfly"
+          }
+        },
+        "additionalProperties": false
+      },
+      "cantfly": {
+        "required": [
+          "bname"
+        ],
+        "type": "object",
+        "properties": {
+          "cId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bname": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "both": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/both"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "fly": {
+        "required": [
+          "cname"
+        ],
+        "type": "object",
+        "properties": {
+          "bId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cname": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "both": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/both"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
