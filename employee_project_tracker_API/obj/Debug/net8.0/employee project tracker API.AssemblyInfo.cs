@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("employee project tracker API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0484b86b58e71a116bb8afead5a3bc1d1d8f856")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7562117800fd3a595926347ac06015daa42b6f6f")]
 [assembly: System.Reflection.AssemblyProductAttribute("employee project tracker API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("employee project tracker API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
